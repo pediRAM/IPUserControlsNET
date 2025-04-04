@@ -20,7 +20,7 @@ This is the english documentation. Following translations are available:
 
 *This is a fork of the original [IPUserControls.Wpf](https://github.com/mariugul/IPUserControls) which is written for .NET Framework 4.5.1 by [mariugul](https://github.com/mariugul).* 
 
-<img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/example-app.jpg" width="400"/> 
+![](https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/example-app.jpg) 
 
 ## Controls Included:
 
@@ -30,31 +30,6 @@ This is the english documentation. Following translations are available:
 | IpPort        | IP Port TextBox      | ushort              |
 | IpStatus      | IP Connection Status | Connection Status   |
 
-## IpStatus colors:
-
-<table>
-<tr>
-    <td><img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/ip_connected.png" width="32"/></td> 
-    <td><img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/ip_connected2.png" width="32"/></td> 
-    <td><img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/ip_connecting.png" width="32"/></td> 
-    <td><img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/ip_connecting2.png" width="32"/></td> 
-</tr>
-<tr>
-    <td>Connected</td><td> Connected2</td><td> Connecting</td><td> Connecting2</td>
-</tr>
-<tr>
-    <td><img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/ip_disconnected.png" width="32"/></td> 
-    <td><img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/ip_error.png" width="32"/></td> 
-    <td><img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/ip_error2.png" width="32"/></td>
-    <td></td>
-</tr>
-<tr>
-    <td> Disconnected</td><td> Error</td><td> Error2</td><td></td>
-</tr>
-</table>
-
-## IP User Control in Action:
-<img src="https://raw.githubusercontent.com/pediRAM/IPUserControlsNET/main/Documentation/usage.gif"/>
 
 ## XAML example:
 
