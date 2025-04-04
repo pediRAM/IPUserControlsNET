@@ -8,6 +8,15 @@
 [![NuGet](https://img.shields.io/nuget/v/IPUserControlsNET)](https://www.nuget.org/packages/IPUserControlsNET)
 <!-- [![.NET](https://img.shields.io/badge/%20E%20U%20👍-0018A8?logo=europeanunion&logoColor=yellow)](https://european-union.europa.eu) -->
 
+This is the english documentation. Following translations are available:
+- [普通话 (Mandarin) :cn:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Mandarin.md)
+- [Español :es:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Spanish.md)
+- [Pусский :ru:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Russian.md)
+- [Deutsch :de: :austria: :switzerland:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/German.md)
+- [हिंदी :india:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Hindi.md)
+- [Türkçe :tr:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Turkish.md)
+- [فارسی :iran: :afghanistan: :tajikistan:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Farsi.md)
+
 *This is a fork of the original [IPUserControls.Wpf](https://github.com/mariugul/IPUserControls) which is written for .NET Framework 4.5.1 by [mariugul](https://github.com/mariugul).* 
 
 <img src="source/Doc/example-app.jpg" width="400"/> 
