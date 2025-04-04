@@ -13,6 +13,7 @@ This is the english documentation. Following translations are available:
 - [Español :es:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Spanish.md)
 - [Pусский :ru:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Russian.md)
 - [Deutsch :de: :austria: :switzerland:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/German.md)
+- [France :fr:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/France.md)
 - [हिंदी :india:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Hindi.md)
 - [Türkçe :tr:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Turkish.md)
 - [فارسی :iran: :afghanistan: :tajikistan:](https://github.com/pediRAM/IPUserControlsNET/blob/main/Documentation/Farsi.md)
