@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net6.0-windows;net8.0-windows;net9.0-windows</TargetFrameworks>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <OutputType>Library</OutputType>
+    <WarningLevel>4</WarningLevel>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+
+
+    <LangVersion>10</LangVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.0</Version>
+    <VersionSuffix></VersionSuffix>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageIcon>icon.png</PackageIcon>
+    <Title>Provides WPF User Controls like: IPv4 filed, (IPv6 comming next), Port-Number field, Connection-Status-Icon etc.</Title>
+    <Authors>mariugul (origin author on github) and Pedram GANJEH-HADIDI (fork and migration for .NET6+ and MAUI)</Authors>
+    <Owners>Pedram GANJEH-HADIDI (pediRAM on github)</Owners>
+    <ProjectUrl>https://github.com/pediRAM/IPUserControls.NET</ProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>
+      This repository provides WPF controls like: IPv4 input field, Portnumber input field and IP-Connection-Status-Icon for following Frameworks: .NET6, .NET8, .NET9 which you can download from Nuget.org
+    </Description>
+    <PackageReleaseNotes>This is the very first release.</PackageReleaseNotes>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/pediRAM/IPUserControls.NET</PackageProjectUrl>
+    <Copyright>Copyright (C)2024 by Pedram GANJEH-HADIDI</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/pediRAM/IPUserControls.NET.git</RepositoryUrl>
+    <PackageTags>revert property value revertible properties</PackageTags>
+    
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\net451\</OutputPath>
+    <WarningLevel>1</WarningLevel>
+    <DocumentationFile>bin\Release\net451\IPUserControls.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="Ip6Field.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Images\icon.xcf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="Ip6Field.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\IPUserControls.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ip_connected.png" />
+    <Resource Include="Images\ip_connected2.png" />
+    <Resource Include="Images\ip_connecting.png" />
+    <Resource Include="Images\ip_connecting2.png" />
+    <Resource Include="Images\ip_disconnected.png" />
+    <Resource Include="Images\ip_error.png" />
+    <Resource Include="Images\ip_error2.png" />
+  </ItemGroup>
+</Project>
