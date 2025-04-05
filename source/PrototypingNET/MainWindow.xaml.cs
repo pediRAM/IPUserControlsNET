@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
+using System.Windows.Media;
 
 namespace PrototypingNET
 {
@@ -66,5 +67,33 @@ namespace PrototypingNET
         }
 
         #endregion Property Notifications
+
+        private void OnTest4x255_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.IpField.IpAddress = "255.255.255.255";
+        }
+
+        private void OnTestColors_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.IpField.Foreground = Brushes.Red;
+            this.IpField.Background = Brushes.Yellow;
+            this.IpField.BorderBrush = Brushes.Green;
+            this.IpField.BorderThickness = new Thickness(IpPort.PortNumber);
+        }
+
+        private void OnTestMargin_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.IpField.Margin = new Thickness(IpPort.PortNumber);
+        }
+
+        private void OnTestFontSize_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.IpField.FontSize = IpPort.PortNumber;
+        }
+
+        private void OnTestPadding_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.IpField.Padding = new Thickness(IpPort.PortNumber);
+        }
     }
 }

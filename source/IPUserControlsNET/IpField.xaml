@@ -12,13 +12,13 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="23.5" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="23.5" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="23.5" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="23.5" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -29,6 +29,8 @@
             Name="FirstByteTextBox"
             Grid.Column="0"
             Text="{Binding IpFirstByte, ElementName=Uc, UpdateSourceTrigger=PropertyChanged}"
+            Background="{Binding ElementName=Uc, Path=Background}"
+            Foreground="{Binding ElementName=Uc, Path=Foreground}"
             MaxLength="3"
             BorderThickness="0"
             VerticalContentAlignment="Center"
@@ -41,6 +43,8 @@
             Name="SecondByteTextBox"
             Grid.Column="2"
             Text="{Binding IpSecondByte, ElementName=Uc, UpdateSourceTrigger=PropertyChanged}"
+            Background="{Binding ElementName=Uc, Path=Background}"
+            Foreground="{Binding ElementName=Uc, Path=Foreground}"
             MaxLength="3"
             BorderThickness="0"
             VerticalContentAlignment="Center"
@@ -53,6 +57,8 @@
             Name="ThirdByteTextBox"
             Grid.Column="4"
             Text="{Binding IpThirdByte, ElementName=Uc, UpdateSourceTrigger=PropertyChanged}"
+            Background="{Binding ElementName=Uc, Path=Background}"
+            Foreground="{Binding ElementName=Uc, Path=Foreground}"
             MaxLength="3"
             BorderThickness="0"
             VerticalContentAlignment="Center"
@@ -65,6 +71,8 @@
             Name="FourthByteTextBox"
             Grid.Column="6"
             Text="{Binding IpFourthByte, ElementName=Uc, UpdateSourceTrigger=PropertyChanged}"
+            Background="{Binding ElementName=Uc, Path=Background}"
+            Foreground="{Binding ElementName=Uc, Path=Foreground}"
             MaxLength="3"
             BorderThickness="0"
             VerticalContentAlignment="Center"
@@ -74,8 +82,17 @@
             PreviewKeyDown="FourthByteTextBox_OnPreviewKeyDown"/>
 
         <!--Dot Separators-->
-        <TextBox Grid.Column="1" Text="." VerticalAlignment="Bottom" TextAlignment="Center" BorderThickness="0" Focusable="False" />
-        <TextBox Grid.Column="3" Text="." VerticalAlignment="Bottom" TextAlignment="Center" Padding="0" BorderThickness="0" Focusable="False" />
-        <TextBox Grid.Column="5" Text="." VerticalAlignment="Bottom" TextAlignment="Center" BorderThickness="0" Focusable="False" />
+        <TextBox Grid.Column="1" Text="." VerticalAlignment="Bottom" TextAlignment="Center" BorderThickness="0" Focusable="False" 
+            Background="{Binding ElementName=Uc, Path=Background}"
+            Foreground="{Binding ElementName=Uc, Path=Foreground}"         
+        />
+        <TextBox Grid.Column="3" Text="." VerticalAlignment="Bottom" TextAlignment="Center" Padding="0" BorderThickness="0" Focusable="False" 
+            Background="{Binding ElementName=Uc, Path=Background}"
+            Foreground="{Binding ElementName=Uc, Path=Foreground}"
+        />
+        <TextBox Grid.Column="5" Text="." VerticalAlignment="Bottom" TextAlignment="Center" BorderThickness="0" Focusable="False" 
+            Background="{Binding ElementName=Uc, Path=Background}"
+            Foreground="{Binding ElementName=Uc, Path=Foreground}"
+        />
     </Grid>
 </UserControl>

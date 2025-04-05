@@ -7,16 +7,34 @@
         xmlns:vm ="clr-namespace:Prototyping"
         DataContext="{Binding RelativeSource={RelativeSource Self}}"
         mc:Ignorable="d"
-        Title="Test Window" Height="133.733" Width="395.733">
+        Title="Test Window" Height="400" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
 
     <Grid Margin="20">
         <StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Label Content="IP Address" />
-                <ip:IpField Name="IpField" Margin="5"/>
+                <Border BorderBrush="Blue" BorderThickness="1" Background="WhiteSmoke" Margin="5">
+
+                    <ip:IpField Name="IpField" Margin="15" FontSize="24" Height="40" Width="250"/>
+                </Border>
                 <ip:IpPort  Name="IpPort" VerticalAlignment="Center" Margin="5"/>
                 <ip:IpStatus Name="IpStatus" Margin="5"/>
-                <Button Name="ConnectionButton" Content="Connect" Click="Button_Click" />
+                <StackPanel>
+                    <Button Name="ConnectionButton" Content="Connect" Click="Button_Click" Margin="8"/>
+                    <Button Content="255" Click="OnTest4x255_Clicked" Margin="8" />
+                    <Button Content="FontSize" Click="OnTestFontSize_Clicked" Margin="8" />
+                    <Button Content="Colors" Click="OnTestColors_Clicked" Margin="8" />
+                    <Button Content="Margin" Click="OnTestMargin_Clicked" Margin="8" />
+                    <Button Content="Padding" Click="OnTestPadding_Clicked" Margin="8" />
+                </StackPanel>
+
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
                 <StackPanel>
