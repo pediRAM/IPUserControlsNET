@@ -20,7 +20,7 @@
         <StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Label Content="IP Address" />
-                <Border BorderBrush="Blue" BorderThickness="1" Background="WhiteSmoke" Margin="5">
+                <Border x:Name="border" BorderBrush="Blue" BorderThickness="1" Background="WhiteSmoke" Margin="5">
 
                     <ip:IpField Name="IpField" Margin="15" FontSize="24" Height="40" Width="250"/>
                 </Border>
@@ -33,6 +33,9 @@
                     <Button Content="Colors" Click="OnTestColors_Clicked" Margin="8" />
                     <Button Content="Margin" Click="OnTestMargin_Clicked" Margin="8" />
                     <Button Content="Padding" Click="OnTestPadding_Clicked" Margin="8" />
+                    <Button Content="Width" Click="OnTestWidth_Clicked" Margin="8" />
+                    <Button Content="Height" Click="OnTestHeight_Clicked" Margin="8" />
+                    <Button Content="Border.Width" Click="OnChangeWidthOfBorderClicked" Margin="8" />
                 </StackPanel>
 
             </StackPanel>

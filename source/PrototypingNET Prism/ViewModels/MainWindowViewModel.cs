@@ -2,9 +2,15 @@
 using Prism.Commands;
 using Prism.Mvvm;
 using System.Diagnostics;
+using System.Runtime.Versioning;
 
 namespace Prototyping_Prism.ViewModels
 {
+    [SupportedOSPlatform("windows7.0")]
+    [SupportedOSPlatform("windows8.0")]
+    [SupportedOSPlatform("windows8.1")]
+    [SupportedOSPlatform("windows10.0")]
+    [SupportedOSPlatform("windows11.0")]
     public class MainWindowViewModel : BindableBase
     {
         public MainWindowViewModel()

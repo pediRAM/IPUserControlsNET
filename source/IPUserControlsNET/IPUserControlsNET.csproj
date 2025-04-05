@@ -12,30 +12,30 @@
     <LangVersion>10</LangVersion>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.0</Version>
-    <VersionSuffix></VersionSuffix>
-    <PackageVersion>1.0</PackageVersion>
+    <Version>1.0.1</Version>
+    <VersionSuffix>beta</VersionSuffix>
+    <PackageVersion>1.0.1-beta</PackageVersion>
     <PackageIcon>icon.png</PackageIcon>
-    <Title>Provides WPF User Controls like: IP-TextBox (IPv6 comming next), Port-TextBox, Connection-Status-Icon etc.</Title>
+    <Title>Provides WPF user controls for ip addresses like: IP-TextBox (ip input field) , Port-TextBox (portnumber input field), Connection-Status-Icon (showing current connection status) etc.</Title>
     <Authors>mariugul (origin author on github) and Pedram GANJEH-HADIDI (fork and migration for .NET6+ and MAUI)</Authors>
     <Owners>Pedram GANJEH-HADIDI (pediRAM on github)</Owners>
     <ProjectUrl>https://github.com/pediRAM/IPUserControlsNET</ProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description>
-      This package provides IP-TextBox (IPv6 comming next), Port-TextBox, Connection-Status-Icon etc. for following Frameworks: .NET6, .NET8, .NET9 which you can download from Nuget.org website.
+      This package provides WPF user controls like IP-TextBox (ip input field), Port-TextBox (portnumber input field), Connection-Status-Icon (showing current connection status) etc. for following Frameworks: .NET6, .NET8, .NET9 which you can download from Nuget.org website.
       The original code was written by mariugul and is available on GitHub. The project has been forked into separated repository and migrated to .NET6+ by Pedram GANJEH-HADIDI (pediRAM on github).
     </Description>
-    <PackageReleaseNotes>This is the very first release.</PackageReleaseNotes>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0</FileVersion>
+    <PackageReleaseNotes>Solved issues: #1 bigger FontSize issue, #2 Foreground/Background color issues, #3 Margin issue</PackageReleaseNotes>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/pediRAM/IPUserControlsNET</PackageProjectUrl>
-    <Copyright>Copyright (C)2024 by Pedram GANJEH-HADIDI</Copyright>
+    <Copyright>Copyright (C)2025 by Pedram GANJEH-HADIDI</Copyright>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/pediRAM/IPUserControlsNET.git</RepositoryUrl>
-    <PackageTags>ip ipv4 port field box input ui control</PackageTags>
-    
+    <PackageTags>ip address field ipv4 port box input user interface control userinterface usercontrol ui</PackageTags>
   </PropertyGroup>
+  
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
   </PropertyGroup>
   <PropertyGroup>
@@ -66,16 +66,9 @@
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
-  
-  <ItemGroup>
-    <Compile Remove="Ip6Field.xaml.cs" />
-  </ItemGroup>
   <ItemGroup>
     <None Remove="icon.png" />
     <None Remove="Images\icon.xcf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Remove="Ip6Field.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="icon.png">

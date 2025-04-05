@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
 using System.Windows;
 using System.Windows.Media;
 
@@ -10,6 +11,11 @@ namespace PrototypingNET
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    [SupportedOSPlatform("windows7.0")]
+    [SupportedOSPlatform("windows8.0")]
+    [SupportedOSPlatform("windows8.1")]
+    [SupportedOSPlatform("windows10.0")]
+    [SupportedOSPlatform("windows11.0")]
     public partial class MainWindow : INotifyPropertyChanged
     {
         public MainWindow()
@@ -94,6 +100,22 @@ namespace PrototypingNET
         private void OnTestPadding_Clicked(object sender, RoutedEventArgs e)
         {
             this.IpField.Padding = new Thickness(IpPort.PortNumber);
+        }
+
+        private void OnChangeWidthOfBorderClicked(object sender, RoutedEventArgs e)
+        {
+            this.border.Width = IpPort.PortNumber;
+            
+        }
+
+        private void OnTestWidth_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.IpField.Width = IpPort.PortNumber;
+        }
+
+        private void OnTestHeight_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.IpField.Height = IpPort.PortNumber;
         }
     }
 }

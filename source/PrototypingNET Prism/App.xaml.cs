@@ -11,6 +11,10 @@ namespace Prototyping_Prism
     public partial class App
     {
         [SupportedOSPlatform("windows7.0")]
+        [SupportedOSPlatform("windows8.0")]
+        [SupportedOSPlatform("windows8.1")]
+        [SupportedOSPlatform("windows10.0")]
+        [SupportedOSPlatform("windows11.0")]
         protected override Window CreateShell()
         {
             return Container.Resolve<MainWindow>();
