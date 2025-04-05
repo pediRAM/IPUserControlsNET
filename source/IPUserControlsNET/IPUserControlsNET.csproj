@@ -33,7 +33,7 @@
     <Copyright>Copyright (C)2024 by Pedram GANJEH-HADIDI</Copyright>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/pediRAM/IPUserControlsNET.git</RepositoryUrl>
-    <PackageTags>revert property value revertible properties</PackageTags>
+    <PackageTags>ip ipv4 port field box input ui control</PackageTags>
     
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
