@@ -1,13 +1,36 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace IPUserControlsNET
+namespace IPUserControlsNET.MAUI
 {
     /// <summary>
     /// string extensions
     /// </summary>
     public static class Extensions
     {
-        public static string NormalizeNumber(this string input)
+        public static bool IsValidOctetValue(this string input)
+            => input.Length > 0 && input.IsNumber() && int.TryParse(input, out var value) && value >= 0 && value <= 255;
+
+        public static string NormalizeOctet(this string input)
+        {
+            // Remove these chars as they will parse as valid numbers
+            // and can show "000", "+2" etc. in the text box.
+           if (input.Length == 0) return "0";
+            input = input
+                .RemoveWhitespace()
+                .RemoveNumberSigns()
+                .RemoveLeadingZerosInByte();
+
+            if (int.TryParse(input, out var value))
+            {
+                if (value > 255)
+                    return "255";
+
+                return value.ToString();
+            }
+            else return "0";
+        }
+
+        public static string NormalizeIpAddress(this string input)
         {
             // Remove these chars as they will parse as valid numbers
             // and can show "000", "+2" etc. in the text box.
@@ -15,7 +38,8 @@ namespace IPUserControlsNET
                 .RemoveWhitespace()
                 .RemoveNumberSigns()
                 .RemoveLeadingZerosInByte();
-            return input;
+            var ipBytes = input.ToIpBytes();
+            return $"{ipBytes[0]}.{ipBytes[1]}.{ipBytes[2]}.{ipBytes[3]}";
         }
 
         /// <summary>

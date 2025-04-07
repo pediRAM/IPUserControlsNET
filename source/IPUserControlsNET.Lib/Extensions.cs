@@ -1,23 +1,12 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace IPUserControlsNET
+namespace IPUserControlsNET.Lib
 {
     /// <summary>
     /// string extensions
     /// </summary>
     public static class Extensions
     {
-        public static string NormalizeNumber(this string input)
-        {
-            // Remove these chars as they will parse as valid numbers
-            // and can show "000", "+2" etc. in the text box.
-            input = input
-                .RemoveWhitespace()
-                .RemoveNumberSigns()
-                .RemoveLeadingZerosInByte();
-            return input;
-        }
-
         /// <summary>
         /// Removes any space in any place of the string.
         /// Does not remove tabs, newlines etc. only space chars.

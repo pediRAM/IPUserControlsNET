@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrototypingNET.MAUI.MainPage"
+             xmlns:ip="clr-namespace:IPUserControlsNET.MAUI;assembly=IPUserControlsNET.MAUI"
+             Padding="0">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle  Grid.Row="0"  Grid.Column="0" Fill="WhiteSmoke" VerticalOptions="Start" HeightRequest="40"/>
+        <ip:IpField Grid.Row="0"  Grid.Column="1" x:Name="ipField"    VerticalOptions="Start" HeightRequest="45" IpAddress="111.222.333.255" Margin="0"/>
+        <Rectangle  Grid.Row="0"  Grid.Column="2" Fill="WhiteSmoke" VerticalOptions="Start" HeightRequest="40"/>
+
+        <!--<Label Keyboard="Text"      Grid.Row="1" Grid.Column="1" Text="{Binding Source={x:Reference ipField}, Path=IpAddress}" Margin="5"/>-->
+        <Entry x:Name="entryText" Keyboard="Text" MaxLength="15"      Grid.Row="1" Grid.Column="1" Placeholder="192.168.0.1" Margin="5"/>
+        <Button     Grid.Row="2" Grid.Column="1" Text="Test" Clicked="OnTestClicked" />
+
+        
+    </Grid>
+
+</ContentPage>
